@@ -19,7 +19,7 @@ RUN npm install -g \
       typescript \
       typescript-language-server \
       pyright \
-      prettier \
+      eslint \
       @ast-grep/cli \
     && npm cache clean --force
 
