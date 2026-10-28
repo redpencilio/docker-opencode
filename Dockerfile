@@ -15,7 +15,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 COPY --from=yq /usr/bin/yq /usr/local/bin/yq
 
 RUN npm install -g \
-      opencode-ai@1.17.9 \
+      @opencode/cli@2 \
       typescript \
       typescript-language-server \
       pyright \
