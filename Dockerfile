@@ -28,11 +28,11 @@ RUN install -m 0755 -d /etc/apt/keyrings \
 COPY --from=yq /usr/bin/yq /usr/local/bin/yq
 
 RUN npm install -g \
-      opencode-ai@1.17.9 \
+      @opencode/cli@2 \
       typescript \
       typescript-language-server \
       pyright \
-      prettier \
+      eslint \
       @ast-grep/cli \
     && npm cache clean --force
 
